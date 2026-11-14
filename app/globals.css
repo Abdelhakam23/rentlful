@@ -1,10 +1,8 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
-/* darkMode: ["class"] في v3 */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ============ Theme tokens (كانت في tailwind.config.ts) ============ */
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
