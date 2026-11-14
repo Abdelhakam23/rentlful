@@ -1,3 +1,4 @@
+import { FeatureItemProps } from "@/components/FeatureItem";
 import {
   Wifi,
   Waves,
@@ -134,3 +135,27 @@ export const testUsers = {
   },
   managerRole: "manager",
 };
+
+export const featureItems:FeatureItemProps[] = [
+  {
+    imageSrc :'/landing-search1.png',
+    title:"Trustworthy and Verified Listings",
+    description:"All our listings are verified and trustworthy, ensuring you find your dream home without any hassle.",
+    linkText:"Explore",
+    linkHref:"/explore",
+  },
+   {
+    imageSrc :'/landing-search2.png',
+    title:"Browse Rental Listings with Ease",
+    description:"Get access to user reviews and ratings for each property, helping you make informed decisions.",
+    linkText:"Search",
+    linkHref:"/search",
+  },
+   {
+    imageSrc :'/landing-search3.png',
+    title:"Simplify Your Rental Search with Advanced",
+    description:"Find trustworthy and verified listings to ensure a hassle-free experience",
+    linkText:"Discover",
+    linkHref:"/discover",
+  }
+]
