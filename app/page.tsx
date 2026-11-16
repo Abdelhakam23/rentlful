@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
-      Home Page
+      Home Page Edit
     </div>
   );
 }
