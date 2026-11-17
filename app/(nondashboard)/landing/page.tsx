@@ -1,5 +1,7 @@
+import CallToActionSection from "./_components/CallToActionSection";
 import DiscoverSection from "./_components/DiscoverSection";
 import FeaturesSection from "./_components/FeaturesSection";
+import FooterSection from "./_components/FooterSection";
 import HeroSection from "./_components/HeroSection";
 
 const LandingPage = () => {
@@ -8,6 +10,8 @@ const LandingPage = () => {
       <HeroSection />
       <FeaturesSection />
       <DiscoverSection />
+      <CallToActionSection />
+      <FooterSection/>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const DiscoverItem = ({ iconSrc, title, description }: DiscoverItemProps) => {
           alt={title}
           width={15}
           height={15}
-          className="w-11 h-11"
+          className="w-6 h-6"
         />
       </div>
       <h3 className="font-bold text-sm text-gray-900">{title}</h3>
