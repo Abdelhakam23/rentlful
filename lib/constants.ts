@@ -1,4 +1,5 @@
-import { FeatureItemProps } from "@/components/FeatureItem";
+import { DiscoverItemProps } from "@/app/(nondashboard)/landing/_components/DiscoverItem";
+import { FeatureItemProps } from "@/app/(nondashboard)/landing/_components/FeatureItem";
 import {
   Wifi,
   Waves,
@@ -157,5 +158,26 @@ export const featureItems:FeatureItemProps[] = [
     description:"Find trustworthy and verified listings to ensure a hassle-free experience",
     linkText:"Discover",
     linkHref:"/discover",
+  }
+]
+
+export const discoverItems:DiscoverItemProps[] = [
+  {
+    iconSrc :'/landing-icon-wand.png',
+    title:"Trustworthy and Verified Listings",
+    description:"All our listings are verified and trustworthy, ensuring you find your dream home without any hassle.",
+   
+  },
+   {
+    iconSrc :'/landing-icon-calendar.png',
+    title:"Browse Rental Listings with Ease",
+    description:"Get access to user reviews and ratings for each property, helping you make informed decisions.",
+    
+  },
+   {
+    iconSrc :'/landing-icon-heart.png',
+    title:"Simplify Your Rental Search with Advanced",
+    description:"Find trustworthy and verified listings to ensure a hassle-free experience",
+   
   }
 ]

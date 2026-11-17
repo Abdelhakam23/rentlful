@@ -1,6 +1,6 @@
 "use client";
 
-import FeatureItem from "@/components/FeatureItem";
+import FeatureItem from "@/app/(nondashboard)/landing/_components/FeatureItem";
 import { featureItems } from "@/lib/constants";
 import { motion } from "framer-motion";
 
