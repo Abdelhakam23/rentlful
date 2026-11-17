@@ -35,7 +35,7 @@ const FeatureItem = ({
         {description}
       </p>
       <Link
-        className=" inline-block  text-sm font-medium border border-gray-300 rounded-lg text-gray-800 px-5 py-2 hover:bg-gray-100 transition-colors duration-200"
+        className=" inline-block md:w-fit  text-sm font-medium border border-gray-300 rounded-lg text-gray-800 px-5 py-2 hover:bg-gray-100 transition-colors duration-200"
         href={linkHref}
       >
         {linkText}

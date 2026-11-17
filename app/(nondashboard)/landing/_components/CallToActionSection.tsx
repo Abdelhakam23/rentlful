@@ -22,14 +22,14 @@ const CallToActionSection = () => {
         transition={{ duration: 0.5 }}
         className="relative max-w-7xl px-4 sm:px-6 md:px-8 py-12 md:py-24 mx-auto"
       >
-        <div className="flex flex-col text-center md:text-start  md:flex-row items-center gap-10  ">
+        <div className="flex flex-col text-center md:text-start  md:flex-row items-center gap-8 md:gap-12 md:justify-between  ">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 leading-relaxed text-white ">
+            <h2 className="text-3xl md:text-4xl font-bold  leading-tight text-white ">
               Start Searching Verified Rentals Today
             </h2>
           </div>
           <div className="text-center md:text-start">
-            <p className="text-primary-50 max-w-md mx-auto text-lg">
+            <p className="text-primary-50 max-w-md mx-auto md:mx-0 text-lg">
               Browse thousands of verified apartments, compare neighborhoods,
               and connect directly with trusted property managers.
             </p>
