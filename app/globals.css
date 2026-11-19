@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
+@import "@aws-amplify/ui-react/styles.css";
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 
