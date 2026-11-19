@@ -3,14 +3,11 @@ import { Amplify } from "aws-amplify";
 import {
   Authenticator,
   Heading,
-  Placeholder,
   Radio,
   RadioGroupField,
   useAuthenticator,
   View,
 } from "@aws-amplify/ui-react";
-import { signIn, signUp } from "aws-amplify/auth";
-import { RadioGroup } from "@/components/ui/radio-group";
 import { usePathname, useRouter } from "next/navigation";
 
 Amplify.configure({
