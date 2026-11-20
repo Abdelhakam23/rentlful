@@ -1,3 +1,4 @@
+import { Manager, Tenant } from "@/types/prisma/browser";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { fetchAuthSession, getCurrentUser } from "aws-amplify/auth";
 
@@ -23,7 +24,7 @@ export const api = createApi({
           const session = await fetchAuthSession();
           const {idToken} = session.tokens ?? {};
           const user = await getCurrentUser();
-          const userRole = idToken?.payload['custom|role'] as string;
+          const userRole = idToken?.payload['custom:role'] as string;
 
           const endpoint = userRole === 'manager'?`/manager/${user.userId}`: `/tenants/${user.userId}`;
 
