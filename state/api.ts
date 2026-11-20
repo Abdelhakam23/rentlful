@@ -1,3 +1,4 @@
+import { Manager, Tenant } from "@/types/prisma/browser";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { fetchAuthSession, getCurrentUser } from "aws-amplify/auth";
 
@@ -23,10 +24,9 @@ export const api = createApi({
           const session = await fetchAuthSession();
           const {idToken} = session.tokens ?? {};
           const user = await getCurrentUser();
-          const userRole = idToken?.payload['custom|role'] as string;
+          const userRole = idToken?.payload['custom:role'] as string;
 
-          const endpoint = userRole === 'manager'?`/manager/${user.userId}`: `/tenants/${user.userId}`;
-
+          const endpoint = userRole === 'manager'?`/managers/${user.userId}`: `/tenants/${user.userId}`;
           let userDetails = await fetchWithBQ(endpoint);
 
           return {
@@ -36,16 +36,12 @@ export const api = createApi({
               userRole
             }
           }
-
         } catch (error :any) {
           return {
             error: error.message || "Could not fetch authenticated user"
           }
-          
         }
-
       }
-
     })
   }),
 });
