@@ -26,8 +26,7 @@ export const api = createApi({
           const user = await getCurrentUser();
           const userRole = idToken?.payload['custom:role'] as string;
 
-          const endpoint = userRole === 'manager'?`/manager/${user.userId}`: `/tenants/${user.userId}`;
-
+          const endpoint = userRole === 'manager'?`/managers/${user.userId}`: `/tenants/${user.userId}`;
           let userDetails = await fetchWithBQ(endpoint);
 
           return {
@@ -37,16 +36,12 @@ export const api = createApi({
               userRole
             }
           }
-
         } catch (error :any) {
           return {
             error: error.message || "Could not fetch authenticated user"
           }
-          
         }
-
       }
-
     })
   }),
 });
